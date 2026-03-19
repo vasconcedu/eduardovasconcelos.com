@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Eduardo Vasconcelos.com - Papers</title><link href="https://eduardovasconcelos.com/" rel="alternate"/><link href="https://eduardovasconcelos.com/feeds/papers.atom.xml" rel="self"/><id>https://eduardovasconcelos.com/</id><updated>2024-10-02T00:00:00-03:00</updated><entry><title>Mutation Testing to Support the Security Testing of Android Applications</title><link href="https://eduardovasconcelos.com/mutation-testing-to-support-the-security-testing-of-android-applications.html" rel="alternate"/><published>2024-10-02T00:00:00-03:00</published><updated>2024-10-02T00:00:00-03:00</updated><author><name>vasconcedu</name></author><id>tag:eduardovasconcelos.com,2024-10-02:/mutation-testing-to-support-the-security-testing-of-android-applications.html</id><summary type="html">&lt;p&gt;&lt;img alt="" src="../images/certificado-cbsoft24.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Meu artigo &lt;em&gt;Mutation Testing to Support the Security Testing of Android Applications&lt;/em&gt; foi publicado e recebeu o prêmio de &lt;em&gt;distinguished paper&lt;/em&gt; no &lt;a href="https://cbsoft.sbc.org.br/2024/sast/artigos/?lang=en"&gt;CBSOFT'24&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Você pode baixar uma cópia gratuita desse paper diretamente dos seguintes repositórios:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://repositorio.usp.br/item/003230573"&gt;USP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://sol.sbc.org.br/index.php/sast/article/view/30213"&gt;SBC&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Obs.: a publicação real deste post ocorreu em 18 de março de 2026 …&lt;/em&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="" src="../images/certificado-cbsoft24.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Meu artigo &lt;em&gt;Mutation Testing to Support the Security Testing of Android Applications&lt;/em&gt; foi publicado e recebeu o prêmio de &lt;em&gt;distinguished paper&lt;/em&gt; no &lt;a href="https://cbsoft.sbc.org.br/2024/sast/artigos/?lang=en"&gt;CBSOFT'24&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Você pode baixar uma cópia gratuita desse paper diretamente dos seguintes repositórios:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://repositorio.usp.br/item/003230573"&gt;USP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://sol.sbc.org.br/index.php/sast/article/view/30213"&gt;SBC&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Obs.: a publicação real deste post ocorreu em 18 de março de 2026. Entretanto, a data de publicação original na minha antiga página pessoal, em 2 de outubro de 2024, foi preservada aqui.&lt;/em&gt;&lt;/p&gt;</content><category term="Papers"/></entry></feed>
