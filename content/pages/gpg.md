@@ -1,4 +1,4 @@
-Title: Chave PGP
+Title: Chave GPG
 Date: 2026-03-18 18:00
 
 
