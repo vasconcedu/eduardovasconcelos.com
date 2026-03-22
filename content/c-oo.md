@@ -13,7 +13,7 @@ C foi a primeira linguagem que eu aprendi formalmente e, possivelmente, a lingua
 
 Em primeiro lugar, _o que é_ código orientado a objetos?
 
-[Programação orientada a objetos](https://en.wikipedia.org/wiki/Object-oriented_programming) é um paradigma de programação construído em torno do conceito de objeto. Esse conceito se refere a uma entidade que agrupa tanto os dados quanto as operações que são aplicáveis a esses dados, sendo que a maneira como os dados e operações são agrupados respeita o conceito de [encapsulamento](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)). Esse conceito estabelece que somente código interno a um objeto pode manipular diretamente os dados desse objeto, e que código externo ao objeto só pode acessar dados e operações através de uma interface de programação exposta pelo objeto. O modelo mais popular de orientação a objetos é o [modelo baseado em classes](https://en.wikipedia.org/wiki/Class_(programming)). Esse é o modelo implementado em Java, por exemplo.
+[Programação orientada a objetos](https://en.wikipedia.org/wiki/Object-oriented_programming) é um paradigma de programação construído em torno do conceito de objeto. Esse conceito se refere a uma entidade que agrupa tanto os dados quanto as operações que são aplicáveis a esses dados, sendo que a maneira como os dados e operações são agrupados respeita o conceito de [encapsulamento](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)). Por sua vez, esse conceito estabelece que somente código interno a um objeto pode manipular diretamente os dados desse objeto, e que código externo ao objeto só pode acessar dados e operações através de uma interface de programação exposta pelo objeto. O modelo mais popular de orientação a objetos é o [modelo baseado em classes](https://en.wikipedia.org/wiki/Class_(programming)). Esse é o modelo implementado em Java, por exemplo.
 
 C é uma linguagem do paradigma procedural e, portanto, _não_ implementa OO por design. Entretanto, é possível utilizar estruturas da linguagem para implementar conceitos desse paradigma de programação. Possivelmente, a maneira mais fácil de iniciar a exploração dessa ideia é pelos dados. Em OO, os dados de um objeto são denominados atributos. É perfeitamente possível fazer um paralelo entre um objeto e os seus atributos em OO e um `struct` e as suas variáveis em C. O trecho de código a seguir ilustra isso:
 
@@ -97,7 +97,7 @@ int main()
     Rectangle *rectangle = construct(1.6180, 1.0);
     printf("Rectangle:\n");
     printf("Width: %f\n", rectangle->getWidth(rectangle)); 
-    printf("Heigth: %f\n", rectangle->getHeight(rectangle));
+    printf("Height: %f\n", rectangle->getHeight(rectangle));
     return 0;
 }
 ```
@@ -107,7 +107,7 @@ O código acima gera a seguinte saída:
 ```bash
 Rectangle:
 Width: 1.618000
-Heigth: 1.000000
+Height: 1.000000
 ```
 
 Podemos incrementar a nossa implementação de `Rectangle` adicionando métodos para calcular área e perímetro, de forma a obter a versão final do código dessa prova de conceito: 
@@ -178,7 +178,7 @@ int main()
     Rectangle *rectangle = construct(1.6180, 1.0);
     printf("Rectangle:\n");
     printf("Width: %f\n", rectangle->getWidth(rectangle)); 
-    printf("Heigth: %f\n", rectangle->getHeight(rectangle));
+    printf("Height: %f\n", rectangle->getHeight(rectangle));
     printf("Area: %f\n", rectangle->getArea(rectangle));
     printf("Perimeter: %f\n", rectangle->getPerimeter(rectangle)); 
     return 0;
@@ -190,7 +190,7 @@ O código acima gera a seguinte saída:
 ```c
 Rectangle:
 Width: 1.618000
-Heigth: 1.000000
+Height: 1.000000
 Area: 1.618000
 Perimeter: 5.236000
 ```
