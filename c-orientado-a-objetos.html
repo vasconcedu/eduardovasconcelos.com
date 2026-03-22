@@ -57,21 +57,11 @@
 <span class="p">};</span>
 </code></pre></div>
 
-<p>Em OO, comumente, existe a necessidade de autoreferenciar o objeto. Para isso, usa-se as palavras-chave <code>this</code>, como em Java, ou <code>self</code>, como em Python. No caso de <code>Rectangle</code>, um ponteiro para esse tipo é suficiente para cumprir esse propósito:</p>
+<p>O próximo passo natural é adicionar setters e getters a <code>Rectangle</code>. A solução aqui é utilizar ponteiros para funções:</p>
 <div class="highlight"><pre><span></span><code><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">Rectangle</span><span class="w"> </span><span class="n">Rectangle</span><span class="p">;</span>
 <span class="k">struct</span><span class="w"> </span><span class="nc">Rectangle</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">;</span>
-<span class="w">    </span><span class="n">Rectangle</span><span class="o">*</span><span class="w"> </span><span class="n">self</span><span class="p">;</span>
-<span class="p">};</span>
-</code></pre></div>
-
-<p>O próximo passo natural é dar setters e getters a <code>Rectangle</code>. A solução aqui é utilizar ponteiros para funções:</p>
-<div class="highlight"><pre><span></span><code><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">Rectangle</span><span class="w"> </span><span class="n">Rectangle</span><span class="p">;</span>
-<span class="k">struct</span><span class="w"> </span><span class="nc">Rectangle</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">;</span>
-<span class="w">    </span><span class="n">Rectangle</span><span class="o">*</span><span class="w"> </span><span class="n">self</span><span class="p">;</span>
 
 <span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">getWidth</span><span class="p">)(</span><span class="n">Rectangle</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="p">);</span>
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">setWidth</span><span class="p">)(</span><span class="n">Rectangle</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">width</span><span class="p">);</span>
@@ -141,7 +131,6 @@ Heigth:<span class="w"> </span><span class="m">1</span>.000000
 <span class="k">struct</span><span class="w"> </span><span class="nc">Rectangle</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">;</span>
-<span class="w">    </span><span class="n">Rectangle</span><span class="o">*</span><span class="w"> </span><span class="n">self</span><span class="p">;</span>
 
 <span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">getArea</span><span class="p">)(</span><span class="n">Rectangle</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="p">);</span>
 <span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">getPerimeter</span><span class="p">)(</span><span class="n">Rectangle</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="p">);</span>
