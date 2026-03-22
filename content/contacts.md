@@ -34,26 +34,13 @@ struct Rectangle
 };
 ```
 
-Em OO, comumente, existe a necessidade de autoreferenciar o objeto. Para isso, usa-se as palavras-chave `this`, como em Java, ou `self`, como em Python. No caso de `Rectangle`, um ponteiro para esse tipo é suficiente para cumprir esse propósito:
+O próximo passo natural é adicionar setters e getters a `Rectangle`. A solução aqui é utilizar ponteiros para funções:
 
 ```c
 typedef struct Rectangle Rectangle;
 struct Rectangle
 {
     float width, height;
-    Rectangle* self;
-};
-
-```
-
-O próximo passo natural é dar setters e getters a `Rectangle`. A solução aqui é utilizar ponteiros para funções:
-
-```c
-typedef struct Rectangle Rectangle;
-struct Rectangle
-{
-    float width, height;
-    Rectangle* self;
 
     float (*getWidth)(Rectangle *self);
     void (*setWidth)(Rectangle *self, float width);
@@ -133,7 +120,6 @@ typedef struct Rectangle Rectangle;
 struct Rectangle
 {
     float width, height;
-    Rectangle* self;
 
     float (*getArea)(Rectangle *self);
     float (*getPerimeter)(Rectangle *self);
